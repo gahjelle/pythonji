@@ -40,3 +40,4 @@ test               = ["black", "flake8", "isort", "mypy", "pytest", "pytest-cov"
 
 [tool.flit.scripts]
 pythonji           = "pythonji.__main__:main"
+"🐍"               = "pythonji.__main__:main"
