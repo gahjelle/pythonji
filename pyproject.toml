@@ -1,0 +1,42 @@
+[build-system]
+requires           = ["flit"]
+build-backend      = "flit.buildapi"
+
+
+[tool.flit.metadata]
+module             = "pythonji"
+author             = "Geir Arne Hjelle"
+author-email       = "geirarne@gmail.com"
+home-page          = "https://github.com/gahjelle/pyconfs"
+description-file   = "README.md"
+classifiers        = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords           = "emoji"
+
+# Requirements
+requires-python    = ">=3.6"
+requires           = [
+    # "importlib_resources; python_version < '3.7'",
+    # "pyplugs",
+]
+
+
+[tool.flit.metadata.requires-extra]
+dev                = ["black", "bumpversion", "flake8", "flit", "isort", "mypy", "pre-commit"]
+doc                = ["mkdocs"]
+test               = ["black", "flake8", "isort", "mypy", "pytest", "pytest-cov", "tox"]
+
+
+[tool.flit.scripts]
+pythonji           = "pythonji.__main__:main"
