@@ -2,12 +2,13 @@
 
 """
 
+# Standard library imports
 import ast
 import pathlib
 import sys
 
+# Third party imports
 import emoji
-
 
 DELIMITERS = ("__pythonji_", "__")
 
