@@ -7,7 +7,7 @@ build-backend      = "flit.buildapi"
 module             = "pythonji"
 author             = "Geir Arne Hjelle"
 author-email       = "geirarne@gmail.com"
-home-page          = "https://github.com/gahjelle/pyconfs"
+home-page          = "https://github.com/gahjelle/pythonji"
 description-file   = "README.md"
 classifiers        = [
     "Development Status :: 2 - Pre-Alpha",
@@ -22,13 +22,12 @@ classifiers        = [
     "Programming Language :: Python :: 3.8",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-keywords           = "emoji"
+keywords           = "python emoji"
 
 # Requirements
 requires-python    = ">=3.6"
 requires           = [
-    # "importlib_resources; python_version < '3.7'",
-    # "pyplugs",
+    "emoji",
 ]
 
 
@@ -39,5 +38,5 @@ test               = ["black", "flake8", "isort", "mypy", "pytest", "pytest-cov"
 
 
 [tool.flit.scripts]
-pythonji           = "pythonji.__main__:main"
 "🐍"               = "pythonji.__main__:main"
+pythonji           = "pythonji.__main__:main"
