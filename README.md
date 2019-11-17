@@ -2,6 +2,7 @@
 
 Write Python code using emojis 🐍
 
+![Example of running 🐍](pythonji.gif)
 
 ## Inspiration
 
