@@ -37,20 +37,21 @@ Save the following code to the file `🐼.🐍`:
 
 ```python
 import pandas as 🐼
+from numpy import random as 🔀
 
 # Define a dataframe and print it to the console
-🐍 = 🐼.DataFrame(
+📋 = 🐼.DataFrame(
     {
-        "animal": ["Panda", "Python", "Lion"],
         "😀": ["🐼", "🐍", "🦁"],
-        "number": [1, 2, 3],
+        "🏷️": ["Panda", "Python", "Lion"],
+        "💯": 🔀.randint(2, 5, size=3),
     },
 ).set_index("😀")
-print(🐍)
+print(📋)
 
 # Do some arithmetic with the dataframe
-🔤 = f" Pythonji {' '.join(🐍.index)}"
-🔢 = 🐍.loc["🐍"].number + 🐍.loc["🐼"].number
+🔤 = f" Pythonji {' '.join(📋.index)}"
+🔢 = 📋.loc["🐍", "💯"] + 📋.loc["🐼", "💯"]
 print(🔤 * 🔢)
 ```
 
@@ -58,12 +59,12 @@ You can run the code as follows:
 
 ```console
 $ pythonji 🐼.🐍 
-   animal  number
-😀                
-🐼   Panda       1
-🐍  Python       2
-🦁    Lion       3
- Pythonji 🐼 🐍 🦁 Pythonji 🐼 🐍 🦁 Pythonji 🐼 🐍 🦁
+        🏷  💯
+😀           
+🐼   Panda  2
+🐍  Python  2
+🦁    Lion  4
+ Pythonji 🐼 🐍 🦁 Pythonji 🐼 🐍 🦁 Pythonji 🐼 🐍 🦁 Pythonji 🐼 🐍 🦁
 ```
 
 
