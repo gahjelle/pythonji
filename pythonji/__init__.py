@@ -1,4 +1,4 @@
-"""Pythonji - 🐍😀 - Write Python with Emojis
+"""🐍 - Write Python with Emojis
 
 """
 
