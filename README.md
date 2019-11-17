@@ -23,10 +23,10 @@ $ python -m pip install pythonji
 
 ## Using 🐍
 
-🐍 installs as `🐍`. 🐍 code files have the suffix `.🐍`. You can run a 🐍 code file as follows:
+🐍 installs as `pythonji`. 🐍 code files have the suffix `.🐍`. You can run a 🐍 code file as follows:
 
 ```console
-$ 🐍 file.🐍
+$ pythonji file.🐍
 ```
 
 
@@ -56,7 +56,7 @@ print(🔤 * 🔢)
 You can run the code as follows:
 
 ```console
-$ 🐍 🐼.🐍 
+$ pythonji 🐼.🐍 
    animal  number
 😀                
 🐼   Panda       1
@@ -69,4 +69,5 @@ $ 🐍 🐼.🐍
 ## Limitations
 
 - 🐍 currently only handles single script files. It can import any regular Python module, but unfortunately not 🐍 modules.
+- Sadly, `pip` does not currently handle unicode command names. Ideally, we want the executable to be named `🐍` instead of `pythonji`.
 - [Black](https://black.readthedocs.io) unfortunately can not handle 🐍 code. Does anybody want to contribute to ⬛, a formatter for 🐍?
