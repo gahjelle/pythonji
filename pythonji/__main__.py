@@ -50,7 +50,9 @@ def emojize_literals(text):
 
 def execute(py_path, python_ast):
     """Run Python on the given AST"""
-    exec(compile(python_ast, py_path, mode="exec"))
+    _source = compile(python_ast, py_path, mode="exec")
+    _globals = {}
+    exec(_source, _globals)
 
 
 if __name__ == "__main__":
