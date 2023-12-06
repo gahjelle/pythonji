@@ -27,7 +27,7 @@ def run(py_file):
 
 def demojize(py_path):
     """Replace emojis by strings in the given file"""
-    py_text = py_path.read_text()
+    py_text = py_path.read_text(encoding="utf-8")
     python_text = emoji.demojize(py_text, delimiters=DELIMITERS)
     return emojize_literals(python_text)
 
