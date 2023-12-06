@@ -35,7 +35,7 @@ def demojize(py_path):
 class EmojiTransformer(ast.NodeTransformer):
     def visit_Str(self, node):
         return ast.copy_location(
-            ast.Str(s=emoji.emojize(node.s, delimiters=DELIMITERS)), node
+            ast.Constant(s=emoji.emojize(node.s, delimiters=DELIMITERS)), node
         )
 
 
